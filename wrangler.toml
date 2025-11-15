@@ -1,17 +1,6 @@
-# wrangler.toml
-# Этот файл должен быть в корне вашего репозитория
-
-name = "emacser" # Используйте имя вашего сервиса
-
-# 1. Новое поле для точки входа (заменяет site.entry-point)
+name = "emacser" 
 main = "workers-site/index.js" 
-
-compatibility_date = "2025-11-15" # Используйте актуальную дату
+compatibility_date = "2025-11-15"
 
 [site]
-# 2. Главная и единственная настройка для Workers Site: 
-# Указывает Wrangler, где находится скомпилированная статика (папка Jekyll).
-bucket = "_site" 
-
-# УСТАРЕВШЕЕ ПОЛЕ (site.entry-point) - ДОЛЖНО БЫТЬ УДАЛЕНО!
-# entry-point = "workers-site"  <--- УДАЛИТЕ ЭТУ СТРОКУ
+bucket = "_site"
